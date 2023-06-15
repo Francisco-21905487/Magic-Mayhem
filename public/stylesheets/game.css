@@ -1,0 +1,31 @@
+body {
+    margin: 0px;
+    padding: 5px;
+    font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+main {
+    margin:auto;
+    display:inline;
+}
+
+/* Game CSS*/
+#game {
+    position: relative;
+  }
+  
+  button.game {
+    font-size: 1.5em;
+    background-color: rgba(226, 57, 19, 0);
+    color: rgb(255, 255, 255);
+    border: 1px solid rgba(27, 31, 35, .15);
+    border-radius: 6px;
+    text-align: center;
+    font-weight: bold;
+  }
+
+
+  
