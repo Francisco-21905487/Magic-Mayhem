@@ -60,8 +60,8 @@ function draw() {
         fill('black');
         text('Loading...', GameInfo.width/2, GameInfo.height/2);
 
-    } else if (GameInfo.game.player.hp <= 0 || GameInfo.game.opponents[0].hp <= 0) {
-        if (GameInfo.game.player.hp <= 0) {
+    } else if (GameInfo.game.player.wizard.hp <= 0 || GameInfo.game.opponents[0].wizard.hp <= 0) {
+        if (GameInfo.game.player.wizard.hp <= 0) {
           background(GameInfo.images.lose);
         } else {
           background(GameInfo.images.win);
