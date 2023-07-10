@@ -17,6 +17,8 @@ async function refresh() {
 function preload() {
     GameInfo.images.card = loadImage('/assets/Magic_Mayhem_Card.png');
     GameInfo.images.board = loadImage('/assets/Magic_Mayhem_table.png');
+    GameInfo.images.win = loadImage('/assets/youwon.png');
+    GameInfo.images.lose = loadImage('/assets/youlose.png');
 }
 
 // Play the background music
@@ -57,6 +59,13 @@ function draw() {
         textSize(40);
         fill('black');
         text('Loading...', GameInfo.width/2, GameInfo.height/2);
+
+    } else if (GameInfo.game.player.hp <= 0 || GameInfo.game.opponents[0].hp <= 0) {
+        if (GameInfo.game.player.hp <= 0) {
+          background(GameInfo.images.lose);
+        } else {
+          background(GameInfo.images.win);
+        }
     } else {
         background(GameInfo.images.board);
         GameInfo.scoreBoard.draw();
