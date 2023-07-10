@@ -24,7 +24,7 @@ async function getDecksInfo() {
             GameInfo.matchDecks.mycards,350,350,playCard,GameInfo.images.card);
         if (GameInfo.oppDeck) GameInfo.oppDeck.update(GameInfo.matchDecks.oppcards); 
         else GameInfo.oppDeck = new Deck("",
-            GameInfo.matchDecks.oppcards,350,-20,null,GameInfo.images.card);
+            GameInfo.matchDecks.oppcards,350,-120,null,GameInfo.images.card);
     }
 }
 
