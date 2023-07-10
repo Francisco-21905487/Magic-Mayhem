@@ -60,7 +60,7 @@ function draw() {
     } else {
         GameInfo.scoreBoard.draw();
         GameInfo.playerDeck.draw();
-        //GameInfo.oppDeck.draw();
+        GameInfo.oppDeck.draw();
         GameInfo.playerWizard.draw();
         GameInfo.oppWizard.draw();
     }
