@@ -17,10 +17,6 @@ class ScoreBoard {
         textSize(18);
         textStyle(BOLD);
         text("Turn: "+this.game.turn,SB_POSX+17,SB_POSY+SB_HEIGHT/6)
-        text(this.game.player.name,SB_POSX+17,SB_POSY+2*SB_HEIGHT/4.2);
-        text(this.game.opponents[0].name,SB_POSX+17,SB_POSY+3*SB_HEIGHT/3.9);
-        text(`(${this.game.player.state})`,SB_POSX+130,SB_POSY+2*SB_HEIGHT/4.2);
-        text(`(${this.game.opponents[0].state})`,SB_POSX+130,SB_POSY+3*SB_HEIGHT/3.9);
         if (this.game.state == "Finished"){ 
             fill(200,0,0);
             textSize(24);
