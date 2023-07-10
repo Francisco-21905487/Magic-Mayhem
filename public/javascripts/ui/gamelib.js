@@ -51,13 +51,14 @@ async function setup() {
 }
 
 function draw() {
-    background(GameInfo.images.board);
+    
     if (GameInfo.loading) {
         textAlign(CENTER, CENTER);
         textSize(40);
         fill('black');
         text('Loading...', GameInfo.width/2, GameInfo.height/2);
     } else {
+        background(GameInfo.images.board);
         GameInfo.scoreBoard.draw();
         GameInfo.playerDeck.draw();
         GameInfo.oppDeck.draw();
