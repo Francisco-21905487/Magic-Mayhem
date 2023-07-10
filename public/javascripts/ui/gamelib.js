@@ -69,10 +69,19 @@ function draw() {
     } else {
         background(GameInfo.images.board);
         GameInfo.scoreBoard.draw();
-        GameInfo.playerDeck.draw();
-        GameInfo.oppDeck.draw();
-        GameInfo.playerWizard.draw();
-        GameInfo.oppWizard.draw();
+        
+        if (GameInfo.playerDeck) {
+            GameInfo.playerDeck.draw();
+        }
+        if (GameInfo.oppDeck) {
+            GameInfo.oppDeck.draw();
+        }
+        if (GameInfo.playerWizard) {
+            GameInfo.playerWizard.draw();
+        }
+        if (GameInfo.oppWizard) {
+            GameInfo.oppWizard.draw();
+        }
     }
     
 }
